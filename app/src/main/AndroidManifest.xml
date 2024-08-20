@@ -21,8 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Walkthroigh1Activity"
-            android:exported="false"/>
+        <activity android:name="com.example.medical.Walkthroigh1Activity" android:exported="false"/>
+        <activity android:name="com.example.medical.Walkthroigh2Activity" android:exported="false"/>
+        <activity android:name="com.example.medical.Walkthrough3Activity" android:exported="false"/>
+        <activity android:name="com.example.medical.Walkthrough4Activity" android:exported="false"/>
+        <activity android:name="com.example.medical.ManWActivity_one" android:exported="false"/>
+        <activity android:name="com.example.medical.ManWActivity_three" android:exported="false"/>
+        <activity android:name="com.example.medical.ManWActivity_two" android:exported="false"/>
     </application>
 
 </manifest>

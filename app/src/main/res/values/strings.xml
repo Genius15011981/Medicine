@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">medical</string>
     <string name="medical">Medical</string>
+    <string name="wellcome_to_nmedica">Wellcome to\nMedica!</string>
+    <string name="the_best_online_doctor_appointment_n_consultation_app_of_the_century_for_your_n_health_and_medical_needs">The best online doctor appointment \n consultation app of the century for your\n health and medical needs</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="thousands_of">Thousands of \ndoctors experts to\n help your health!</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get started</string>
+    <string name="lets">Let\'s start living\nhealthy and well\nwith us right now!</string>
 </resources>

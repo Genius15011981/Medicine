@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Walkthrough3Activity">
+
+    <ImageView
+        android:id="@+id/splash_back"
+        android:layout_width="500dp"
+        android:layout_height="650dp"
+        android:src="@drawable/fdoctor_back"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/splash_img"
+        android:layout_width="500dp"
+        android:layout_height="650dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/fdoctor_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/shape_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="200dp"
+        android:text="Health checks\nconsultations easily\nanywhere anytime"
+        android:textAlignment="center"
+        android:textColor="#246BFD"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/space_beet_two"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <Button
+        android:id="@+id/nxt_btn"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="next"
+        android:shadowColor="#246BFD"
+        android:shadowRadius="8"
+        android:text="Next"
+        app:circularflow_defaultRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
