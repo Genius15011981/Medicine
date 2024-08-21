@@ -1,5 +1,6 @@
 package com.example.medical
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -14,5 +15,8 @@ class ManWActivity_three : AppCompatActivity() {
 
     }
 
-    fun next(view: View) {}
+    fun next(view: View) {
+        val intent = Intent(this, SignActivity::class.java)
+        startActivity(intent)
+    }
 }
