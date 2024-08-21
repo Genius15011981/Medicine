@@ -10,6 +10,20 @@
     tools:context=".CreatActivity">
 
     <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cropToPadding="false"
+        android:onClick="back"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+    <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="140dp"
@@ -61,11 +75,10 @@
         android:drawablePadding="10dp"
         android:gravity="fill_vertical"
         android:hint="@string/password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         android:paddingStart="20dp"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/creat_mail_input"
-        tools:ignore="RtlSymmetry,TextViewEdits,UseCompatTextViewDrawableXml" />
+        app:layout_constraintTop_toBottomOf="@+id/creat_mail_input" />
 
     <TextView
         android:id="@+id/or_continue"

@@ -7,7 +7,20 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:tooltipText="facebook">
-
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cropToPadding="false"
+        android:onClick="back"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/splash_img"
@@ -37,6 +50,7 @@
 
     <TextView
         android:id="@+id/btn_facebook"
+        android:onClick="facebook_ac"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
@@ -55,6 +69,7 @@
 
     <TextView
         android:id="@+id/btn_google"
+        android:onClick="google_ac"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
@@ -72,6 +87,7 @@
 
     <TextView
         android:id="@+id/btn_apple"
+        android:onClick="apple_ac"
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
@@ -120,14 +136,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="50dp"
         android:text="@string/sign_up"
-        android:textStyle="bold"
         android:textColor="#246BFC"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="691dp" />
+
     <TextView
         android:layout_width="151dp"
         android:layout_height="20dp"
@@ -146,12 +163,19 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="50dp"
         android:text="@string/sign_up"
-        android:textStyle="bold"
         android:textColor="#246BFC"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="691dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="splash_img,textView,btn_facebook,btn_google,btn_apple,nxt_btn,sign_up_bot_txt" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ManWActivity_one">
-
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cropToPadding="false"
+        android:onClick="back"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
     <ImageView
         android:id="@+id/splash_img"
         android:layout_width="500dp"

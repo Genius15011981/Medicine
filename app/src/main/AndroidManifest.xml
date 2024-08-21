@@ -45,6 +45,7 @@
         <activity
             android:name=".ManWActivity_two"
             android:exported="false" />
+        <activity android:name="com.example.medical.SignActivity" />
     </application>
 
 </manifest>
