@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Medical"
         tools:targetApi="31">
         <activity
+            android:name=".CreatActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,13 +24,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.medical.Walkthroigh1Activity" android:exported="false"/>
-        <activity android:name="com.example.medical.Walkthroigh2Activity" android:exported="false"/>
-        <activity android:name="com.example.medical.Walkthrough3Activity" android:exported="false"/>
-        <activity android:name="com.example.medical.Walkthrough4Activity" android:exported="false"/>
-        <activity android:name="com.example.medical.ManWActivity_one" android:exported="false"/>
-        <activity android:name="com.example.medical.ManWActivity_three" android:exported="false"/>
-        <activity android:name="com.example.medical.ManWActivity_two" android:exported="false"/>
+        <activity
+            android:name=".Walkthroigh1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Walkthroigh2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Walkthrough3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Walkthrough4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ManWActivity_one"
+            android:exported="false" />
+        <activity
+            android:name=".ManWActivity_three"
+            android:exported="false" />
+        <activity
+            android:name=".ManWActivity_two"
+            android:exported="false" />
     </application>
 
 </manifest>

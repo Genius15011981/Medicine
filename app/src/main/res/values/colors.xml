@@ -5,4 +5,5 @@
     <color name="main_color">#246BFD</color>
     <color name="primary500">#246BFD</color>
     <color name="Greyscale200">#eeeeee</color>
+    <color name="Greyscale50">#FAFAFA</color>
 </resources>
